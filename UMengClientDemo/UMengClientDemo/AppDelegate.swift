@@ -21,6 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
 
 	func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 		// Override point for customization after application launch.
+		JNYJUMeng.didFinished_launchOptions(launchOptions)
+		//
 		let splitViewController = self.window!.rootViewController as UISplitViewController
 		let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count-1] as UINavigationController
 		navigationController.topViewController.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem()
@@ -55,6 +57,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
 		// Saves changes in the application's managed object context before the application terminates.
 		self.saveContext()
 	}
+
+	func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject]) {
+		JNYJUMeng.didReceiveRemoteNotification(userInfo)
+	}
+	func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
+		JNYJUMeng.didRegisterForRemoteNotificationsWithDeviceToken(deviceToken)
+	}
+
 
 	// MARK: - Split view
 

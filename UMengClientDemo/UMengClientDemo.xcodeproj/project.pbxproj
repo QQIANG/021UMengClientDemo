@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7CBE67571A29991A007897EC /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CBE67561A29991A007897EC /* libz.dylib */; };
+		7CBE675A1A2999AB007897EC /* JNYJUMeng.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBE67591A2999AB007897EC /* JNYJUMeng.m */; };
 		7CD008111A2823FF0049F64A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD008101A2823FF0049F64A /* AppDelegate.swift */; };
 		7CD008141A2823FF0049F64A /* UMengClientDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7CD008121A2823FF0049F64A /* UMengClientDemo.xcdatamodeld */; };
 		7CD008161A2823FF0049F64A /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD008151A2823FF0049F64A /* MasterViewController.swift */; };
@@ -20,6 +22,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		7CBE67521A295CCE007897EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7CD008691A282AD10049F64A /* UMessage_Sdk_Demo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2C9BBEC5181A6590004E5226;
+			remoteInfo = UMessage_Sdk_Demo;
+		};
+		7CBE67541A295CCE007897EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7CD008691A282AD10049F64A /* UMessage_Sdk_Demo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2C9BBEE9181A6590004E5226;
+			remoteInfo = UMessage_Sdk_DemoTests;
+		};
 		7CD008261A2823FF0049F64A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7CD008031A2823FF0049F64A /* Project object */;
@@ -30,6 +46,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7CBE67561A29991A007897EC /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		7CBE67581A2999AB007897EC /* JNYJUMeng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JNYJUMeng.h; sourceTree = "<group>"; };
+		7CBE67591A2999AB007897EC /* JNYJUMeng.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JNYJUMeng.m; sourceTree = "<group>"; };
 		7CD0080B1A2823FF0049F64A /* UMengClientDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UMengClientDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CD0080F1A2823FF0049F64A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7CD008101A2823FF0049F64A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CBE67571A29991A007897EC /* libz.dylib in Frameworks */,
 				7CD008731A282AD10049F64A /* libUMessage_Sdk_1.1.0.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,9 +91,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7CBE674E1A295CCE007897EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7CBE67531A295CCE007897EC /* UMessage_Sdk_Demo.app */,
+				7CBE67551A295CCE007897EC /* UMessage_Sdk_DemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		7CD008021A2823FF0049F64A = {
 			isa = PBXGroup;
 			children = (
+				7CBE67561A29991A007897EC /* libz.dylib */,
 				7CD0080D1A2823FF0049F64A /* UMengClientDemo */,
 				7CD008281A2823FF0049F64A /* UMengClientDemoTests */,
 				7CD0080C1A2823FF0049F64A /* Products */,
@@ -98,6 +128,8 @@
 				7CD008171A2823FF0049F64A /* DetailViewController.swift */,
 				7CD008361A2829FB0049F64A /* JNYJ.h */,
 				7CD008371A2829FB0049F64A /* JNYJ.m */,
+				7CBE67581A2999AB007897EC /* JNYJUMeng.h */,
+				7CBE67591A2999AB007897EC /* JNYJUMeng.m */,
 				7CD008191A2823FF0049F64A /* Main.storyboard */,
 				7CD0081C1A2823FF0049F64A /* Images.xcassets */,
 				7CD0081E1A2823FF0049F64A /* LaunchScreen.xib */,
@@ -220,6 +252,12 @@
 			mainGroup = 7CD008021A2823FF0049F64A;
 			productRefGroup = 7CD0080C1A2823FF0049F64A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7CBE674E1A295CCE007897EC /* Products */;
+					ProjectRef = 7CD008691A282AD10049F64A /* UMessage_Sdk_Demo.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				7CD0080A1A2823FF0049F64A /* UMengClientDemo */,
@@ -227,6 +265,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		7CBE67531A295CCE007897EC /* UMessage_Sdk_Demo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = UMessage_Sdk_Demo.app;
+			remoteRef = 7CBE67521A295CCE007897EC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7CBE67551A295CCE007897EC /* UMessage_Sdk_DemoTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = UMessage_Sdk_DemoTests.xctest;
+			remoteRef = 7CBE67541A295CCE007897EC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		7CD008091A2823FF0049F64A /* Resources */ = {
@@ -258,6 +313,7 @@
 				7CD008111A2823FF0049F64A /* AppDelegate.swift in Sources */,
 				7CD008161A2823FF0049F64A /* MasterViewController.swift in Sources */,
 				7CD008181A2823FF0049F64A /* DetailViewController.swift in Sources */,
+				7CBE675A1A2999AB007897EC /* JNYJUMeng.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,7 +439,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yang Fushou (8S726YDT5R)";
+				FRAMEWORK_SEARCH_PATHS = "-all_load";
 				INFOPLIST_FILE = UMengClientDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -391,6 +450,7 @@
 					"$(PROJECT_DIR)/UMengClientDemo/UMessage_Sdk_All_1.1.0(idfa)/UMessage_Sdk_Demo/UMessage_Sdk_Demo/UMessage_Sdk_1.1.0",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "93df9ca2-da2d-47f3-9fb8-23a5a65519d1";
 				SWIFT_OBJC_BRIDGING_HEADER = "UMengClientDemo/UMengClientDemo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -401,7 +461,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yang Fushou (8S726YDT5R)";
+				FRAMEWORK_SEARCH_PATHS = "-all_load";
 				INFOPLIST_FILE = UMengClientDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -409,6 +472,7 @@
 					"$(PROJECT_DIR)/UMengClientDemo/UMessage_Sdk_All_1.1.0(idfa)/UMessage_Sdk_Demo/UMessage_Sdk_Demo/UMessage_Sdk_1.1.0",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "93df9ca2-da2d-47f3-9fb8-23a5a65519d1";
 				SWIFT_OBJC_BRIDGING_HEADER = "UMengClientDemo/UMengClientDemo-Bridging-Header.h";
 			};
 			name = Release;
@@ -466,6 +530,7 @@
 				7CD008311A2823FF0049F64A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7CD008321A2823FF0049F64A /* Build configuration list for PBXNativeTarget "UMengClientDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -474,6 +539,7 @@
 				7CD008341A2823FF0049F64A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

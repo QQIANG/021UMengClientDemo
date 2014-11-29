@@ -16,7 +16,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     //set AppKey and LaunchOptions
-    [UMessage startWithAppkey:@"your app key" launchOptions:launchOptions];
+    [UMessage startWithAppkey:@"5477f1b3fd98c57a8d000b39" launchOptions:launchOptions];
     
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= _IPHONE80_
     if(UMSYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"8.0"))
